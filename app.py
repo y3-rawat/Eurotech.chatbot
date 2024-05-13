@@ -6,7 +6,6 @@ import string
 import gpt
 from difflib import SequenceMatcher
 from flask_cors import CORS
-
 import json
 # Creating a Flask app instance
 app = Flask(__name__)
