@@ -68,5 +68,3 @@ def get_bot_response():
         # except:
         #     return f"An error occurred: Trying again"
 
-if __name__ == "__main__":
-    app.run(debug=False)
