@@ -54,17 +54,17 @@ def get_bot_response():
         print(response,"respoonce")
         ans = gpt.main_module_for_genrating_answer(userText,response)
         return ans.content
-        # try:
-        #     response = get_response(chatbot, userText)
-        #     return response
-        # except Exception as e:
-        #     try:
-        #         response = get_response(chatbot, userText)
-        #         return response
-        #     except:
-        #         try:
-        #             response = get_response(chatbot, userText)
-        #             return response
-        # except:
-        #     return f"An error occurred: Trying again"
+        try:
+            response = get_response(chatbot, userText)
+            return response
+        except Exception as e:
+            try:
+                response = get_response(chatbot, userText)
+                return response
+            except:
+                try:
+                    response = get_response(chatbot, userText)
+                    return response     
+                except:
+                    return f"An error occurred: Trying again"
 
